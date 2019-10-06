@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#recent-work">Recent Work</a>
+            <a href="#map">My location</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="welcome">
+            <h1>Hi! I'm Adis.</h1>
+        </div>    
+    </header>
+
+    <main>
+        <!-- About Me -->
+        <section id="about">
+            <div class="row">
+                <div class="side">
+                    <h2>ABOUT ME</h2>
+                    <img class="profile-img" src=profile-picture-with-name.jpg alt="profile picture">
+                    <p>Bachelor of Science in Mechanical Engineering</p>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>AutoCAD</li>
+                        <li>SOLIDWORKS</li>
+                        <li>Microsoft Dynamics NAV</li>
+                        <li>SoftiCar</li>
+                        <li>MS Office</li>
+                        <li>Net@Pro</li>
+                    </ul>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Bosnian – native language</li>
+                        <li>English – professional user</li>
+                        <li>German – basic user</li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h2>WORK EXPERIENCE</h2>
+                    <h3>Production manager / <a href="https://www.ferrettogroup.com/index.cfm/en/company/ferretto-group-in-the-world/Ferretto-group-central-europe/" target="_blank">Ferretto Group Central Europe d.o.o. Usora</a></h3>
+                    <p>October 2017 – August 2019</p>
+                    <p>Duties and responsibilities: Production organization and planning, Monitoring and enhancement of the production process, Annual production planning in collaboration with operations manager, Implementation of a quality management system, Coordination with technical office.</p>
+                    <h3>Inbound assistant / <a href="http://preventgroup.ba/en/homepage/" target="_blank">Prevent BH d.o.o. - Car Trim Žepče</a></h3>
+                    <p>November 2016 – October 2017</p>
+                    <p>Duties and responsibilities: Scheduling raw material purchases, Monitoring of the stock of raw materials, Tracking orders and ensuring timely delivery, Evaluation of the offers, Preparation of statistical reports.</p>
+                    <br>
+                    <h2>EDUCATION</h2>
+                    <h3>Faculty of Mechanical Engineering, University of Zenica / Postgraduate studies</h3>
+                    <p>October 2016 – present</p>
+                    <p>Field of study: Production Technology Management</p>
+                    <h3>Faculty of Mechanical Engineering, University of Zenica / Undergraduate studies</h3>
+                    <p>October 2010 – March 2016</p>
+                    <p>Field of study: Maintenance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Work -->
+        <section id="recent-work">
+                <h2>MY RECENT WORK</h2>
+                <div class="flex-container">
+                    <a href="https://www.ipi.ba/wp-content/uploads/2018/01/30.-SB_30-STATISTI%C4%8CKA-ANALIZA-PODATAKA-O-OBAVLJENIM-TEHNI%C4%8CKIM-PREGLEDIMA-U-PRVOM-TROMJESE%C4%8CJU-2015.-GODINE-I-STRU%C4%8CNE-TEME-Zenica-apriltravanj-2015.-godine.pdf" target="_blank"><img src="cooling-system.PNG" alt="cooling system of cars with ICE" class="img-project"></a>
+                    <a href="https://drive.google.com/file/d/1K7CBrCADNsuvdvd2YJcsBeqg-YW6fjvi/view?usp=sharing" target="_blank"><img src="download.jpg" alt="picture of robot" class="img-project"></a>
+                    <a href="https://www.youtube.com/watch?v=nVkTw-4r1W0" target="_blank"> <img src="gear-shaft.jpg" alt="shaft" class="img-project"> </a>
+                </div>    
+        </section>
+
+        <!--Google Maps -->
+        <section> 
+            <div id="map"></div>
+            <script>
+
+                function initMap() {
+                var zenica = {lat: 44.199176, lng: 17.903618};
+                var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: zenica});
+                var marker = new google.maps.Marker({position: zenica, map: map});
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+            </script>
+        </section>
+    </main>
+ 
+<!-- Footer -->
+<section id="contact">
+    <div class="footer">
+        <h2>Footer</h2>
+        <p>Zenica, Bosnia and Herzegovina</p> 
+        <p>Mobile phone: +387 62 XXX XXX</p>
+        <p>E-mail: durmis.adis@gmail.com</p>
+        <a href="https://www.linkedin.com/in/adis-durmi%C5%A1/" target="_blank">LinkedIn</p>
+        <a href="https://join.skype.com/invite/lnEC76ri63jE" target="_blank">Skype</p>
+    </div>
+</section>
+
+</body>
+</html>
